@@ -16,6 +16,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import json
 import os
 import requests
 import time
@@ -75,10 +76,10 @@ SUGG_HEADERS = Q_HEADERS
 
 # Unicode is fine here.
 SUGG_PARAMETERS = {
-    'REQ0JourneyStopsS0G': 'saar?',
+    # I'll need to be able to change these
+    'REQ0JourneyStopsS0G': 'saar',
     # Whatever.
     'getstop': '1',
-    'js': 'true',
     'noSession': 'yes',
     'REQ0JourneyStopsB': '50',
     'REQ0JourneyStopsS0A': '1',
@@ -128,8 +129,8 @@ def get_suggestions_raw():
 
     # Actual query
     # URL is safe, everything else must be converted first.
-    r = requests.post(SUGG_URL, headers=encode_dict(SUGG_HEADERS),
-                      data=encode_dict(payload))
+    r = requests.get(SUGG_URL, headers=encode_dict(SUGG_HEADERS),
+                      params=encode_dict(payload))
 
     # Save to disk in case something horrible happens
     log_response(r)
@@ -138,6 +139,31 @@ def get_suggestions_raw():
     return r.text
 
 
+def parse_suggestions(sugg_text):
+    # Clean up JSONP wrapper, or whatever that is.
+    PREFIX = 'SLs.sls='
+    SUFFIX = ';SLs.showSuggestion();'
+    if not sugg_text.startswith(PREFIX):
+        print("Bad prefix!")
+        return dict()
+    sugg_text = sugg_text[len(PREFIX):]
+    if not sugg_text.endswith(SUFFIX):
+        print("Bad suffix!")
+        return dict()
+    sugg_text = sugg_text[:-len(SUFFIX)]
+
+    # Parse as JSON:
+    tree = json.loads(sugg_text)
+    if 'suggestions' not in tree or len(tree) != 1:
+        print("JSON object not parsed as dict or something!")
+        return dict()
+    sugg_list = tree['suggestions']
+    return sugg_list
+
+
 if __name__ == '__main__':
-    get_suggestions_raw()
-    print('Hello World!')
+    print('Parsed as these suggestions:')
+    #get_suggestions_raw()
+    with open('responses/response_1493755813.3408453_text_ISO-8859-1.html', 'r') as fp:
+        print(parse_suggestions(fp.read()))
+    print('Done.')
