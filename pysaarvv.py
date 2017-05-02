@@ -161,6 +161,28 @@ def parse_suggestions(sugg_text):
     return sugg_list
 
 
+# If you change this, also update .gitignore
+USER_ALIASES = 'user_aliases.json'
+USER_STATIONS = 'user_stations.json'
+SYS_ALIASES = 'known_aliases.json'
+    # FIXME UNIB UNIC UNIM UNIV DUMA
+SYS_STATIONS = 'known_stations.json'
+
+
+def get_aliases():
+    try:
+        return json.load(USER_ALIASES)
+    except FileNotFoundError:
+        return json.load(SYS_ALIASES)
+
+
+def get_stations():
+    try:
+        return json.load(USER_STATIONS)
+    except FileNotFoundError:
+        return json.load(SYS_STATIONS)
+
+
 if __name__ == '__main__':
     print('Parsed as these suggestions:')
     #get_suggestions_raw()
