@@ -67,13 +67,46 @@ Q_PARAMETERS = {
     'start': 'Verbindungen+suchen',
 }
 
+# Must be kept valid ISO 8859-1!
+SUGG_URL = 'http://www.saarfahrplan.de/cgi-bin/ajax-getstop.exe/dny'
+
+# Unicode is fine here.  Also, just reuse those headers.
+SUGG_HEADERS = Q_HEADERS
+
+# Unicode is fine here.
+SUGG_PARAMETERS = {
+    'REQ0JourneyStopsS0G': 'saar?',
+    # Whatever.
+    'getstop': '1',
+    'js': 'true',
+    'noSession': 'yes',
+    'REQ0JourneyStopsB': '50',
+    'REQ0JourneyStopsS0A': '1',
+    'start': '1',
+    'tpl': 'suggest2json',
+}
+
 
 def encode_dict(d):
     return {k.encode(SERVER_ENCODING): v.encode(SERVER_ENCODING)
             for (k, v) in d.items()}
 
 
-def get_raw():
+def log_response(r):
+    t = time.time()
+    name = 'response_{}_raw.html'.format(t)
+    print('[GET_RAW] Saved response content to {}'.format(name))
+    path = os.path.join('responses', name)
+    with open(path, 'wb') as fp:
+        fp.write(r.content)
+    name = 'response_{}_text_{}.html'.format(t, r.encoding)  # Save myself some work
+    print('[GET_RAW] Saved response text to {}'.format(name))
+    path = os.path.join('responses', name)
+    with open(path, 'wb') as fp:
+        fp.write(r.text.encode())
+
+
+def get_bus_raw():
     # Prepare parameters (stub)
     payload = Q_PARAMETERS
 
@@ -81,26 +114,30 @@ def get_raw():
     # URL is safe, everything else must be converted first.
     r = requests.post(Q_URL, headers=encode_dict(Q_HEADERS),
                       data=encode_dict(payload))
-    print('Guessed encoding: ' + r.encoding)
 
     # Save to disk in case something horrible happens
-    t = time.time()
-    name = 'response_{}_raw.html'.format(t)
-    print('[GET_RAW] Saved response content to {}'.format(name))
-    path = os.path.join('responses', name)
-    with open(path, 'wb') as fp:
-        fp.write(r.content)
-    name = 'response_text_{}_{}.html'.format(t, r.encoding)  # Save myself some work
-    print('[GET_RAW] Saved response text to {}'.format(name))
-    path = os.path.join('responses', name)
-    text = r.text
-    with open(path, 'wb') as fp:
-        fp.write(text.encode())
+    log_response(r)
+
+    # All done
+    return r.text
+
+
+def get_suggestions_raw():
+    # Prepare parameters (stub)
+    payload = SUGG_PARAMETERS
+
+    # Actual query
+    # URL is safe, everything else must be converted first.
+    r = requests.post(SUGG_URL, headers=encode_dict(SUGG_HEADERS),
+                      data=encode_dict(payload))
+
+    # Save to disk in case something horrible happens
+    log_response(r)
 
     # All done
     return r.text
 
 
 if __name__ == '__main__':
-    get_raw()
+    get_suggestions_raw()
     print('Hello World!')
