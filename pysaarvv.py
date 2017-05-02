@@ -76,8 +76,7 @@ SUGG_HEADERS = Q_HEADERS
 
 # Unicode is fine here.
 SUGG_PARAMETERS = {
-    # I'll need to be able to change these
-    'REQ0JourneyStopsS0G': 'saar',
+    # 'REQ0JourneyStopsS0G': 'searchkeywordhere',
     # Whatever.
     'getstop': '1',
     'noSession': 'yes',
@@ -123,9 +122,10 @@ def get_bus_raw():
     return r.text
 
 
-def get_suggestions_raw():
+def get_suggestions_raw(name_part):
     # Prepare parameters (stub)
-    payload = SUGG_PARAMETERS
+    payload = dict(SUGG_PARAMETERS)
+    payload['REQ0JourneyStopsS0G'] = name_part
 
     # Actual query
     # URL is safe, everything else must be converted first.
@@ -163,7 +163,6 @@ def parse_suggestions(sugg_text):
 
 # If you change this, also update .gitignore
 USER_ALIASES = 'user_aliases.json'
-USER_STATIONS = 'user_stations.json'
 SYS_ALIASES = 'known_aliases.json'
     # FIXME UNIB UNIC UNIM UNIV DUMA
 SYS_STATIONS = 'known_stations.json'
@@ -171,16 +170,13 @@ SYS_STATIONS = 'known_stations.json'
 
 def get_aliases():
     try:
-        return json.load(USER_ALIASES)
+        return json.load(open(USER_ALIASES, 'r'))
     except FileNotFoundError:
-        return json.load(SYS_ALIASES)
+        return json.load(open(SYS_ALIASES, 'r'))
 
 
 def get_stations():
-    try:
-        return json.load(USER_STATIONS)
-    except FileNotFoundError:
-        return json.load(SYS_STATIONS)
+    return json.load(open(SYS_STATIONS, 'r'))
 
 
 if __name__ == '__main__':

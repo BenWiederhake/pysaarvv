@@ -1,0 +1,378 @@
+{
+"000010043": {
+"typeStr": "[Bhf/Hst]",
+"value": "ST.JAKOB, Saarbr\u00fccken"
+},
+"000010044": {
+"typeStr": "[Bhf/Hst]",
+"value": "VHS, Saarbr\u00fccken"
+},
+"000010048": {
+"typeStr": "[Bhf/Hst]",
+"value": "IHK, Saarbr\u00fccken"
+},
+"000010051": {
+"typeStr": "[Bhf/Hst]",
+"value": "JVA, Saarbr\u00fccken"
+},
+"000010601": {
+"typeStr": "[Bhf/Hst]",
+"value": "DSK DEUTSCHE STEINKOHLE AG SAAR, Saarbr\u00fccken"
+},
+"000011010": {
+"typeStr": "[Bhf/Hst]",
+"value": "Saar Basar, Saarbr\u00fccken"
+},
+"000011505": {
+"typeStr": "[Bhf/Hst]",
+"value": "SAAR"
+},
+"000012600": {
+"typeStr": "[Bhf/Hst]",
+"value": "Bahnhof, Dudweiler Saarbr\u00fccken"
+},
+"000012601": {
+"typeStr": "[Bhf/Hst]",
+"value": "B\u00fcrgerhaus, Dudweiler Saarbr\u00fccken"
+},
+"000012603": {
+"typeStr": "[Bhf/Hst]",
+"value": "In der Wagenl\u00fcck, Dudweiler Saarbr\u00fccken"
+},
+"000012605": {
+"typeStr": "[Bhf/Hst]",
+"value": "Schwimmbad (Freibad), Dudweiler Saarbr\u00fccken"
+},
+"000012606": {
+"typeStr": "[Bhf/Hst]",
+"value": "Stadtpark, Dudweiler Saarbr\u00fccken"
+},
+"000012607": {
+"typeStr": "[Bhf/Hst]",
+"value": "B\u00dcRGERAMT, Dudweiler Saarbr\u00fccken"
+},
+"000012608": {
+"typeStr": "[Bhf/Hst]",
+"value": "Am Sandberg, Dudweiler Saarbr\u00fccken"
+},
+"000012609": {
+"typeStr": "[Bhf/Hst]",
+"value": "Am Schlachthaus, Dudweiler Saarbr\u00fccken"
+},
+"000012610": {
+"typeStr": "[Bhf/Hst]",
+"value": "An der Sauerwies, Dudweiler Saarbr\u00fccken"
+},
+"000012611": {
+"typeStr": "[Bhf/Hst]",
+"value": "An der Steig, Dudweiler Saarbr\u00fccken"
+},
+"000012612": {
+"typeStr": "[Bhf/Hst]",
+"value": "Barbarastr., Dudweiler Saarbr\u00fccken"
+},
+"000012613": {
+"typeStr": "[Bhf/Hst]",
+"value": "Beim Weisenstein, Dudweiler Saarbr\u00fccken"
+},
+"000012614": {
+"typeStr": "[Bhf/Hst]",
+"value": "Bruchwiesenstr., Dudweiler Saarbr\u00fccken"
+},
+"000012615": {
+"typeStr": "[Bhf/Hst]",
+"value": "Feldstr., Dudweiler Saarbr\u00fccken"
+},
+"000012616": {
+"typeStr": "[Bhf/Hst]",
+"value": "Friedhof, Dudweiler Saarbr\u00fccken"
+},
+"000012617": {
+"typeStr": "[Bhf/Hst]",
+"value": "Klosterstr., Dudweiler Saarbr\u00fccken"
+},
+"000012618": {
+"typeStr": "[Bhf/Hst]",
+"value": "Felsenstr., Dudweiler Saarbr\u00fccken"
+},
+"000012619": {
+"typeStr": "[Bhf/Hst]",
+"value": "Gartenstr., Dudweiler Saarbr\u00fccken"
+},
+"000012620": {
+"typeStr": "[Bhf/Hst]",
+"value": "Gehlenbergstr., Dudweiler Saarbr\u00fccken"
+},
+"000012621": {
+"typeStr": "[Bhf/Hst]",
+"value": "Gr\u00fchlingsh\u00f6he, Dudweiler Saarbr\u00fccken"
+},
+"000012623": {
+"typeStr": "[Bhf/Hst]",
+"value": "Hermann-L\u00f6ns-Str., Dudweiler Saarbr\u00fccken"
+},
+"000012624": {
+"typeStr": "[Bhf/Hst]",
+"value": "Herrensohrer Weg, Dudweiler Saarbr\u00fccken"
+},
+"000012625": {
+"typeStr": "[Bhf/Hst]",
+"value": "Hirschbach, Dudweiler Saarbr\u00fccken"
+},
+"000012626": {
+"typeStr": "[Bhf/Hst]",
+"value": "In den Kurzen R\u00f6dern, Dudweiler Saarbr\u00fccken"
+},
+"000012627": {
+"typeStr": "[Bhf/Hst]",
+"value": "Kantstr., Dudweiler Saarbr\u00fccken"
+},
+"000012628": {
+"typeStr": "[Bhf/Hst]",
+"value": "Liesbet-Dill-Str., Dudweiler Saarbr\u00fccken"
+},
+"000012629": {
+"typeStr": "[Bhf/Hst]",
+"value": "Malditzer Wiese, Dudweiler Saarbr\u00fccken"
+},
+"000012630": {
+"typeStr": "[Bhf/Hst]",
+"value": "Neuhauser Weg, Dudweiler Saarbr\u00fccken"
+},
+"000012631": {
+"typeStr": "[Bhf/Hst]",
+"value": "Neuweilerstr., Dudweiler Saarbr\u00fccken"
+},
+"000012632": {
+"typeStr": "[Bhf/Hst]",
+"value": "Pfaffenkopf, Dudweiler Saarbr\u00fccken"
+},
+"000012633": {
+"typeStr": "[Bhf/Hst]",
+"value": "Rentrischer Str., Dudweiler Saarbr\u00fccken"
+},
+"000012634": {
+"typeStr": "[Bhf/Hst]",
+"value": "St.Avolder Str., Dudweiler Saarbr\u00fccken"
+},
+"000012635": {
+"typeStr": "[Bhf/Hst]",
+"value": "Sudstr., Dudweiler Saarbr\u00fccken"
+},
+"000012636": {
+"typeStr": "[Bhf/Hst]",
+"value": "Tannenweg, Dudweiler Saarbr\u00fccken"
+},
+"000012637": {
+"typeStr": "[Bhf/Hst]",
+"value": "Turmschulhaus, Dudweiler Saarbr\u00fccken"
+},
+"000012639": {
+"typeStr": "[Bhf/Hst]",
+"value": "Wilhelmsh\u00f6he, Dudweiler Saarbr\u00fccken"
+},
+"000012640": {
+"typeStr": "[Bhf/Hst]",
+"value": "Blumenstr., Dudweiler Saarbr\u00fccken"
+},
+"000012641": {
+"typeStr": "[Bhf/Hst]",
+"value": "Mainstr., Dudweiler Saarbr\u00fccken"
+},
+"000012642": {
+"typeStr": "[Bhf/Hst]",
+"value": "Schw\u00e4hnselstr., Dudweiler Saarbr\u00fccken"
+},
+"000012643": {
+"typeStr": "[Bhf/Hst]",
+"value": "Krankenhaus, Dudweiler Saarbr\u00fccken"
+},
+"000016807": {
+"typeStr": "[Bhf/Hst]",
+"value": "Saar-Mobil, P\u00fcttlingen"
+},
+"000027302": {
+"typeStr": "[Bhf/Hst]",
+"value": "Saar-Gummi-Werke, B\u00fcschfeld Wadern"
+},
+"000029000": {
+"typeStr": "[Bhf/Hst]",
+"value": "Saarburg Bahnhof"
+},
+"000040002": {
+"typeStr": "[Bhf/Hst]",
+"value": "GLOBUS, Saarlouis"
+},
+"000040006": {
+"typeStr": "[Bhf/Hst]",
+"value": "Kaserne, Saarlouis"
+},
+"000040027": {
+"typeStr": "[Bhf/Hst]",
+"value": "Sporthalle, Saarlouis"
+},
+"000040028": {
+"typeStr": "[Bhf/Hst]",
+"value": "Pieper, Saarlouis"
+},
+"000041022": {
+"typeStr": "[Bhf/Hst]",
+"value": "Saardom, Dillingen"
+},
+"000049810": {
+"typeStr": "[Bhf/Hst]",
+"value": "Saarschacht, Ensdorf"
+},
+"000050332": {
+"typeStr": "[Bhf/Hst]",
+"value": "Saar-Nadellager, Erbach Homburg"
+},
+"000060036": {
+"typeStr": "[Bhf/Hst]",
+"value": "Dillinger Str./Dudweilerstr., St.Wendel"
+},
+"000112602": {
+"typeStr": "[Bhf/Hst]",
+"value": "Dudoplatz, Dudweiler Saarbr\u00fccken"
+},
+"000112622": {
+"typeStr": "[Bhf/Hst]",
+"value": "Guckelsberg, Dudweiler Saarbr\u00fccken"
+},
+"000147903": {
+"typeStr": "[Bhf/Hst]",
+"value": "Saarstr., Wadgassen"
+},
+"008000075": {
+"typeStr": "[Bhf/Hst]",
+"value": "Dillingen (Saar)"
+},
+"008000176": {
+"typeStr": "[Bhf/Hst]",
+"value": "Homburg (Saar) Hbf"
+},
+"008000272": {
+"typeStr": "[Bhf/Hst]",
+"value": "Neunkirchen (Saar) Hbf"
+},
+"008000319": {
+"typeStr": "[Bhf/Hst]",
+"value": "Rohrbach (Saar)"
+},
+"008000323": {
+"typeStr": "[Bhf/Hst]",
+"value": "Saarbr\u00fccken Hbf"
+},
+"008000371": {
+"typeStr": "[Bhf/Hst]",
+"value": "Ein\u00f6d (Saar)"
+},
+"008000840": {
+"typeStr": "[Bhf/Hst]",
+"value": "Beckingen (Saar)"
+},
+"008001110": {
+"typeStr": "[Bhf/Hst]",
+"value": "Bous (Saar)"
+},
+"008001302": {
+"typeStr": "[Bhf/Hst]",
+"value": "Saarbr\u00fccken-Burbach Mitte (IT Park)"
+},
+"008001570": {
+"typeStr": "[Bhf/Hst]",
+"value": "Dudweiler"
+},
+"008001799": {
+"typeStr": "[Bhf/Hst]",
+"value": "Ensdorf (Saar)"
+},
+"008002117": {
+"typeStr": "[Bhf/Hst]",
+"value": "Friedrichsthal (Saar)"
+},
+"008002132": {
+"typeStr": "[Bhf/Hst]",
+"value": "Friedrichsthal (Saar) Mitte"
+},
+"008002625": {
+"typeStr": "[Bhf/Hst]",
+"value": "Hassel (Saar)"
+},
+"008002746": {
+"typeStr": "[Bhf/Hst]",
+"value": "Hemmersdorf (Saar)"
+},
+"008003059": {
+"typeStr": "[Bhf/Hst]",
+"value": "Illingen (Saar)"
+},
+"008003684": {
+"typeStr": "[Bhf/Hst]",
+"value": "Limbach (b Homburg,Saar)"
+},
+"008003796": {
+"typeStr": "[Bhf/Hst]",
+"value": "Luisenthal (Saar)"
+},
+"008003991": {
+"typeStr": "[Bhf/Hst]",
+"value": "Merzig (Saar) Stadtmitte"
+},
+"008003992": {
+"typeStr": "[Bhf/Hst]",
+"value": "Merzig (Saar)"
+},
+"008004312": {
+"typeStr": "[Bhf/Hst]",
+"value": "Neunkirchen (Saar)-Wellesweiler"
+},
+"008005241": {
+"typeStr": "[Bhf/Hst]",
+"value": "Saarbr\u00fccken Ost"
+},
+"008005243": {
+"typeStr": "[Bhf/Hst]",
+"value": "Saarbr\u00fccken-Burbach"
+},
+"008005245": {
+"typeStr": "[Bhf/Hst]",
+"value": "Saarburg (Bz Trier)"
+},
+"008005246": {
+"typeStr": "[Bhf/Hst]",
+"value": "Saarh\u00f6lzbach"
+},
+"008005247": {
+"typeStr": "[Bhf/Hst]",
+"value": "Saarlouis Hbf"
+},
+"008005332": {
+"typeStr": "[Bhf/Hst]",
+"value": "Scheidt (Saar)"
+},
+"008005796": {
+"typeStr": "[Bhf/Hst]",
+"value": "Sulzbach (Saar)"
+},
+"008005797": {
+"typeStr": "[Bhf/Hst]",
+"value": "Sulzbach (Saar) Altenwald"
+},
+"008006170": {
+"typeStr": "[Bhf/Hst]",
+"value": "Walhausen (Saar)"
+},
+"008006461": {
+"typeStr": "[Bhf/Hst]",
+"value": "Wiltingen(Saar)"
+},
+"008006581": {
+"typeStr": "[Bhf/Hst]",
+"value": "W\u00fcrzbach (Saar)"
+},
+"008700439": {
+"typeStr": "[Bhf/Hst]",
+"value": "Saargem\u00fcnd (F)"
+}
+}

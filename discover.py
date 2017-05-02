@@ -17,13 +17,12 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import json
-import os
-import sys
 import pysaarvv
+import sys
 
 USAGE = """USAGE: {prog} <NAME_PART>
 Use anything that SaarVV might recognize as <NAME_PART>.
-New stations are automatically merged into your {USER_STATIONS}.
+New stations are automatically merged into {SYS_STATIONS}.
 """
 
 USE_FIELDS = {'typeStr', 'value'}
@@ -32,8 +31,10 @@ USE_FIELDS = {'typeStr', 'value'}
 
 
 def extend(stations, name_part, verbose=True):
-    sugg_raw = pysaarvv.get_suggestions_raw()  # FIXME: Use argument!
+    sugg_raw = pysaarvv.get_suggestions_raw(name_part)
     sugg_list = pysaarvv.parse_suggestions(sugg_raw)
+    print('Got {} responses.'.format(len(sugg_list)))
+    counter = 0
 
     for sugg in sugg_list:
         ID = sugg['extId']
@@ -43,28 +44,32 @@ def extend(stations, name_part, verbose=True):
         entry = {k: v for (k, v) in sugg.items() if k in USE_FIELDS}
         if verbose:
             print('New entry {} for ID {}'.format(entry, ID))
+        counter += 1
         stations[ID] = entry
 
+    print('Done extending.  Saw {} new station(s).'.format(counter))
     return stations
 
 
 def run(name_part):
     stations = pysaarvv.get_stations()
     extend(stations, name_part)
-    json.dump(stations, pysaarvv.SYS_STATIONS)
+    json.dump(stations, open(pysaarvv.SYS_STATIONS, 'w'),
+        # Allow for easy versioning of the result
+        indent='', sort_keys=True)
 
 
 if __name__ == '__main__':
-    is len(argv) < 2:
+    if len(sys.argv) < 2:
         print('Need an argument.')
         print()
-        print(USAGE)
+        print(USAGE.format(prog=sys.argv[0], SYS_STATIONS=pysaarvv.SYS_STATIONS))
         exit(1)
-    elif len(argv) > 2:
+    elif len(sys.argv) > 2:
         print('More than one argument.  Did you mean to run the following instead?')
+        print('{} "{}"'.format(sys.argv[0], ' '.join(sys.argv[1:])))
         print()
-        print('{prog} "{arg}"'.format(prog=argv[0], ' '.join(argv[1:])))
         print(USAGE)
         exit(1)
     else:
-        run(argv[1])
+        run(sys.argv[1])

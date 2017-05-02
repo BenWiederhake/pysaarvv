@@ -1,4 +1,3 @@
 __pycache__
 # No filthy user data in the repository
 /user_aliases.json
-/user_stations.json
