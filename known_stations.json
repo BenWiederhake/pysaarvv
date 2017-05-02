@@ -15,13 +15,29 @@
 "typeStr": "[Bhf/Hst]",
 "value": "JVA, Saarbr\u00fccken"
 },
+"000010209": {
+"typeStr": "[Bhf/Hst]",
+"value": "Malstatter Markt, Saarbr\u00fccken Malstatt"
+},
 "000010601": {
 "typeStr": "[Bhf/Hst]",
 "value": "DSK DEUTSCHE STEINKOHLE AG SAAR, Saarbr\u00fccken"
 },
+"000010608": {
+"typeStr": "[Bhf/Hst]",
+"value": "St.Johanner Markt, Saarbr\u00fccken"
+},
 "000011010": {
 "typeStr": "[Bhf/Hst]",
 "value": "Saar Basar, Saarbr\u00fccken"
+},
+"000011113": {
+"typeStr": "[Bhf/Hst]",
+"value": "Markt, Saarbr\u00fccken St.Arnual"
+},
+"000011402": {
+"typeStr": "[Bhf/Hst]",
+"value": "Markt, Gersweiler Saarbr\u00fccken"
 },
 "000011505": {
 "typeStr": "[Bhf/Hst]",
@@ -187,9 +203,429 @@
 "typeStr": "[Bhf/Hst]",
 "value": "Krankenhaus, Dudweiler Saarbr\u00fccken"
 },
+"000012804": {
+"typeStr": "[Bhf/Hst]",
+"value": "Markt, Herrensohr Saarbr\u00fccken"
+},
+"000013407": {
+"typeStr": "[Bhf/Hst]",
+"value": "Marktweg, Ensheim Saarbr\u00fccken"
+},
+"000014304": {
+"typeStr": "[Bhf/Hst]",
+"value": "Markt, Friedrichsthal"
+},
+"000014411": {
+"typeStr": "[Bhf/Hst]",
+"value": "Markt, Bildstock Friedrichsthal"
+},
+"000015537": {
+"typeStr": "[Bhf/Hst]",
+"value": "Markt, Heusweiler"
+},
+"000016201": {
+"typeStr": "[Bhf/Hst]",
+"value": "Markt, Kleinblittersdorf"
+},
+"000016502": {
+"typeStr": "[Bhf/Hst]",
+"value": "Markt, Bliesransbach Kleinblittersdorf"
+},
 "000016807": {
 "typeStr": "[Bhf/Hst]",
 "value": "Saar-Mobil, P\u00fcttlingen"
+},
+"000017105": {
+"typeStr": "[Bhf/Hst]",
+"value": "Alter Markt, Quierschied"
+},
+"000017208": {
+"typeStr": "[Bhf/Hst]",
+"value": "Markt, Fischbach Quierschied"
+},
+"000017305": {
+"typeStr": "[Bhf/Hst]",
+"value": "Markt, G\u00f6ttelborn Quierschied"
+},
+"000017800": {
+"typeStr": "[Bhf/Hst]",
+"value": "Bahnhof, Sulzbach"
+},
+"000017801": {
+"typeStr": "[Bhf/Hst]",
+"value": "Bahnhofstr., Sulzbach"
+},
+"000017802": {
+"typeStr": "[Bhf/Hst]",
+"value": "T\u00dcV, Sulzbach"
+},
+"000017803": {
+"typeStr": "[Bhf/Hst]",
+"value": "Abzweigung, Sulzbach"
+},
+"000017804": {
+"typeStr": "[Bhf/Hst]",
+"value": "Schnappacher Weg, Sulzbach"
+},
+"000017805": {
+"typeStr": "[Bhf/Hst]",
+"value": "Sportplatz, Schnappach Sulzbach"
+},
+"000017806": {
+"typeStr": "[Bhf/Hst]",
+"value": "Stadtwerke, Sulzbach"
+},
+"000017807": {
+"typeStr": "[Bhf/Hst]",
+"value": "Rathaus, Sulzbach"
+},
+"000017810": {
+"typeStr": "[Bhf/Hst]",
+"value": "Wendeschleife, Sulzbach"
+},
+"000017814": {
+"typeStr": "[Bhf/Hst]",
+"value": "Tulpenweg, Sulzbach"
+},
+"000017815": {
+"typeStr": "[Bhf/Hst]",
+"value": "Nelkenstr., Sulzbach"
+},
+"000017816": {
+"typeStr": "[Bhf/Hst]",
+"value": "Obere Goldene Au, Sulzbach"
+},
+"000017817": {
+"typeStr": "[Bhf/Hst]",
+"value": "Sportzentrum, Sulzbach"
+},
+"000017818": {
+"typeStr": "[Bhf/Hst]",
+"value": "Untere Goldene Au, Sulzbach"
+},
+"000017822": {
+"typeStr": "[Bhf/Hst]",
+"value": "Fischbacher Weg, Sulzbach"
+},
+"000017826": {
+"typeStr": "[Bhf/Hst]",
+"value": "Parallelstr., Sulzbach"
+},
+"000017827": {
+"typeStr": "[Bhf/Hst]",
+"value": "Einkaufszentrum, Sulzbach"
+},
+"000017902": {
+"typeStr": "[Bhf/Hst]",
+"value": "Friedhof, Altenwald Sulzbach"
+},
+"000017903": {
+"typeStr": "[Bhf/Hst]",
+"value": "Wiesenstr., Altenwald Sulzbach"
+},
+"000017904": {
+"typeStr": "[Bhf/Hst]",
+"value": "Torhaus, Altenwald Sulzbach"
+},
+"000017906": {
+"typeStr": "[Bhf/Hst]",
+"value": "Kirche, Altenwald Sulzbach"
+},
+"000017907": {
+"typeStr": "[Bhf/Hst]",
+"value": "Markt, Altenwald Sulzbach"
+},
+"000017908": {
+"typeStr": "[Bhf/Hst]",
+"value": "Oststr., Altenwald Sulzbach"
+},
+"000017909": {
+"typeStr": "[Bhf/Hst]",
+"value": "Hammersberg, Sulzbach"
+},
+"000017910": {
+"typeStr": "[Bhf/Hst]",
+"value": "Skatezentrum, Altenwald Sulzbach"
+},
+"000017911": {
+"typeStr": "[Bhf/Hst]",
+"value": "Friedrichsthaler Str., Altenwald Sulzbach"
+},
+"000018001": {
+"typeStr": "[Bhf/Hst]",
+"value": "Dr. Abt, H\u00fchnerfeld Sulzbach"
+},
+"000018002": {
+"typeStr": "[Bhf/Hst]",
+"value": "Sternplatz, H\u00fchnerfeld Sulzbach"
+},
+"000018003": {
+"typeStr": "[Bhf/Hst]",
+"value": "Kreisel, H\u00fchnerfeld Sulzbach"
+},
+"000018100": {
+"typeStr": "[Bhf/Hst]",
+"value": "Bahnhof, Brefeld Sulzbach"
+},
+"000018102": {
+"typeStr": "[Bhf/Hst]",
+"value": "L126, Brefeld Sulzbach"
+},
+"000018103": {
+"typeStr": "[Bhf/Hst]",
+"value": "Am Kreuzgraben, Brefeld Sulzbach"
+},
+"000018201": {
+"typeStr": "[Bhf/Hst]",
+"value": "Altersheim, Neuweiler Sulzbach"
+},
+"000018202": {
+"typeStr": "[Bhf/Hst]",
+"value": "Brunnenstr., Neuweiler Sulzbach"
+},
+"000018203": {
+"typeStr": "[Bhf/Hst]",
+"value": "Friedhof, Neuweiler Sulzbach"
+},
+"000018205": {
+"typeStr": "[Bhf/Hst]",
+"value": "Feuerwehr, Neuweiler Sulzbach"
+},
+"000018206": {
+"typeStr": "[Bhf/Hst]",
+"value": "Karl-Marx-Str., Neuweiler Sulzbach"
+},
+"000018207": {
+"typeStr": "[Bhf/Hst]",
+"value": "Industrie I, Neuweiler Sulzbach"
+},
+"000018209": {
+"typeStr": "[Bhf/Hst]",
+"value": "Sternplatz 1, Neuweiler Sulzbach"
+},
+"000018210": {
+"typeStr": "[Bhf/Hst]",
+"value": "Sternplatz 2, Neuweiler Sulzbach"
+},
+"000018213": {
+"typeStr": "[Bhf/Hst]",
+"value": "Justus-von-Liebig-Str., Neuweiler Sulzbach"
+},
+"000018302": {
+"typeStr": "[Bhf/Hst]",
+"value": "Am Lindenbaum, Schnappach Sulzbach"
+},
+"000018303": {
+"typeStr": "[Bhf/Hst]",
+"value": "Zum Ruhbachtal, Schnappach Sulzbach"
+},
+"000018524": {
+"typeStr": "[Bhf/Hst]",
+"value": "Markt, V\u00f6lklingen"
+},
+"000018706": {
+"typeStr": "[Bhf/Hst]",
+"value": "Markt, F\u00fcrstenhausen V\u00f6lklingen"
+},
+"000023001": {
+"typeStr": "[Bhf/Hst]",
+"value": "Am Rund, Bachem Losheim"
+},
+"000023002": {
+"typeStr": "[Bhf/Hst]",
+"value": "Bachemer Str., Bachem Losheim"
+},
+"000023003": {
+"typeStr": "[Bhf/Hst]",
+"value": "Provinzialstr., Bachem Losheim"
+},
+"000023004": {
+"typeStr": "[Bhf/Hst]",
+"value": "Kirche, Bachem Losheim"
+},
+"000023006": {
+"typeStr": "[Bhf/Hst]",
+"value": "Bahnhof, Bachem Losheim"
+},
+"000023101": {
+"typeStr": "[Bhf/Hst]",
+"value": "Abzw B268, Bergen Losheim"
+},
+"000023103": {
+"typeStr": "[Bhf/Hst]",
+"value": "Alte M\u00fchle, Bergen Losheim"
+},
+"000023104": {
+"typeStr": "[Bhf/Hst]",
+"value": "Ortsmitte, Bergen Losheim"
+},
+"000023105": {
+"typeStr": "[Bhf/Hst]",
+"value": "Sportplatz, Bergen Losheim"
+},
+"000023201": {
+"typeStr": "[Bhf/Hst]",
+"value": "Kirche, Britten Losheim"
+},
+"000023202": {
+"typeStr": "[Bhf/Hst]",
+"value": "Bergstr., Britten Losheim"
+},
+"000023203": {
+"typeStr": "[Bhf/Hst]",
+"value": "Saarstr., Britten Losheim"
+},
+"000023204": {
+"typeStr": "[Bhf/Hst]",
+"value": "Abzw Mettlach, Britten Losheim"
+},
+"000023206": {
+"typeStr": "[Bhf/Hst]",
+"value": "Abzw B268, Britten Losheim"
+},
+"000023301": {
+"typeStr": "[Bhf/Hst]",
+"value": "Ortsmitte, Hausbach Losheim"
+},
+"000023400": {
+"typeStr": "[Bhf/Hst]",
+"value": "Bahnhof, Losheim am See"
+},
+"000023401": {
+"typeStr": "[Bhf/Hst]",
+"value": "Globus, Losheim am See"
+},
+"000023402": {
+"typeStr": "[Bhf/Hst]",
+"value": "Globus Wolfsborn, Losheim am See"
+},
+"000023403": {
+"typeStr": "[Bhf/Hst]",
+"value": "S\u00fcd, Losheim am See"
+},
+"000023405": {
+"typeStr": "[Bhf/Hst]",
+"value": "Sparkasse, Losheim am See"
+},
+"000023406": {
+"typeStr": "[Bhf/Hst]",
+"value": "Alter Markt, Losheim am See"
+},
+"000023408": {
+"typeStr": "[Bhf/Hst]",
+"value": "Stausee, Losheim am See"
+},
+"000023409": {
+"typeStr": "[Bhf/Hst]",
+"value": "Merziger Str., Losheim am See"
+},
+"000023410": {
+"typeStr": "[Bhf/Hst]",
+"value": "Schulzentrum, Losheim am See"
+},
+"000023411": {
+"typeStr": "[Bhf/Hst]",
+"value": "Hubertushof, Losheim am See"
+},
+"000023412": {
+"typeStr": "[Bhf/Hst]",
+"value": "Heimlingen, Losheim am See"
+},
+"000023417": {
+"typeStr": "[Bhf/Hst]",
+"value": "Herkeswald, Losheim am See"
+},
+"000023418": {
+"typeStr": "[Bhf/Hst]",
+"value": "Abzweig Im Haag, Losheim am See"
+},
+"000023419": {
+"typeStr": "[Bhf/Hst]",
+"value": "Globus Baumarkt, Losheim am See"
+},
+"000023420": {
+"typeStr": "[Bhf/Hst]",
+"value": "Haagstr., Losheim am See"
+},
+"000023501": {
+"typeStr": "[Bhf/Hst]",
+"value": "Kohr, Mitlosheim Losheim"
+},
+"000023502": {
+"typeStr": "[Bhf/Hst]",
+"value": "Hassler, Mitlosheim Losheim"
+},
+"000023600": {
+"typeStr": "[Bhf/Hst]",
+"value": "Bahnhof, Niederlosheim Losheim"
+},
+"000023601": {
+"typeStr": "[Bhf/Hst]",
+"value": "Kirche, Niederlosheim Losheim"
+},
+"000023602": {
+"typeStr": "[Bhf/Hst]",
+"value": "Wendalinusstr., Niederlosheim Losheim"
+},
+"000023603": {
+"typeStr": "[Bhf/Hst]",
+"value": "Zur Heide, Niederlosheim Losheim"
+},
+"000023608": {
+"typeStr": "[Bhf/Hst]",
+"value": "Homanit, Niederlosheim Losheim"
+},
+"000023701": {
+"typeStr": "[Bhf/Hst]",
+"value": "Schule, Rimlingen Losheim"
+},
+"000023801": {
+"typeStr": "[Bhf/Hst]",
+"value": "Ortsmitte, Rissenthal Losheim"
+},
+"000023802": {
+"typeStr": "[Bhf/Hst]",
+"value": "West, Rissenthal Losheim"
+},
+"000023901": {
+"typeStr": "[Bhf/Hst]",
+"value": "Ortsmitte, Scheiden Losheim"
+},
+"000024001": {
+"typeStr": "[Bhf/Hst]",
+"value": "Kreuzw\u00e4ldchen, Wahlen Losheim"
+},
+"000024002": {
+"typeStr": "[Bhf/Hst]",
+"value": "Post, Wahlen Losheim"
+},
+"000024003": {
+"typeStr": "[Bhf/Hst]",
+"value": "R\u00f6merstr., Wahlen Losheim"
+},
+"000024005": {
+"typeStr": "[Bhf/Hst]",
+"value": "Dellborner M\u00fchle, Niederlosheim Losheim"
+},
+"000024006": {
+"typeStr": "[Bhf/Hst]",
+"value": "Schule, Wahlen Losheim"
+},
+"000024007": {
+"typeStr": "[Bhf/Hst]",
+"value": "Lehmbergstr., Wahlen Losheim"
+},
+"000024090": {
+"typeStr": "[Bhf/Hst]",
+"value": "Markushof, Wahlen Losheim"
+},
+"000024101": {
+"typeStr": "[Bhf/Hst]",
+"value": "Laacher Bruch, Waldh\u00f6lzbach Losheim"
+},
+"000024102": {
+"typeStr": "[Bhf/Hst]",
+"value": "Kirche, Waldh\u00f6lzbach Losheim"
 },
 "000027302": {
 "typeStr": "[Bhf/Hst]",
@@ -199,6 +635,206 @@
 "typeStr": "[Bhf/Hst]",
 "value": "Saarburg Bahnhof"
 },
+"000030001": {
+"typeStr": "[Bhf/Hst]",
+"value": "Sinnerthal, Neunkirchen"
+},
+"000030005": {
+"typeStr": "[Bhf/Hst]",
+"value": "Lindenallee, Neunkirchen"
+},
+"000030008": {
+"typeStr": "[Bhf/Hst]",
+"value": "Schlossstr., Neunkirchen"
+},
+"000030009": {
+"typeStr": "[Bhf/Hst]",
+"value": "Oberer Markt, Neunkirchen"
+},
+"000030014": {
+"typeStr": "[Bhf/Hst]",
+"value": "Gymnasium, Neunkirchen"
+},
+"000030015": {
+"typeStr": "[Bhf/Hst]",
+"value": "Scheib, Neunkirchen"
+},
+"000030020": {
+"typeStr": "[Bhf/Hst]",
+"value": "Nahebahnschacht, Neunkirchen"
+},
+"000030021": {
+"typeStr": "[Bhf/Hst]",
+"value": "Rodenheimweg, Neunkirchen"
+},
+"000030023": {
+"typeStr": "[Bhf/Hst]",
+"value": "Bliesm\u00fchle, Neunkirchen"
+},
+"000030024": {
+"typeStr": "[Bhf/Hst]",
+"value": "Ebersp\u00e4cher, Neunkirchen"
+},
+"000030025": {
+"typeStr": "[Bhf/Hst]",
+"value": "Eisweiher, Neunkirchen"
+},
+"000030026": {
+"typeStr": "[Bhf/Hst]",
+"value": "Fernstr., Neunkirchen"
+},
+"000030027": {
+"typeStr": "[Bhf/Hst]",
+"value": "Flotowstr., Neunkirchen"
+},
+"000030029": {
+"typeStr": "[Bhf/Hst]",
+"value": "Friedhofsweg, Neunkirchen"
+},
+"000030031": {
+"typeStr": "[Bhf/Hst]",
+"value": "G\u00fcterbahnhof, Neunkirchen"
+},
+"000030032": {
+"typeStr": "[Bhf/Hst]",
+"value": "Hermannstr., Neunkirchen"
+},
+"000030034": {
+"typeStr": "[Bhf/Hst]",
+"value": "Iltisweg, Neunkirchen"
+},
+"000030035": {
+"typeStr": "[Bhf/Hst]",
+"value": "Jahnstr., Neunkirchen"
+},
+"000030036": {
+"typeStr": "[Bhf/Hst]",
+"value": "Kasbruch, Neunkirchen"
+},
+"000030038": {
+"typeStr": "[Bhf/Hst]",
+"value": "L\u00e4mmerhof, Neunkirchen"
+},
+"000030039": {
+"typeStr": "[Bhf/Hst]",
+"value": "Marienkirche, Neunkirchen"
+},
+"000030040": {
+"typeStr": "[Bhf/Hst]",
+"value": "Milchhof, Neunkirchen"
+},
+"000030044": {
+"typeStr": "[Bhf/Hst]",
+"value": "Schlachthof, Neunkirchen"
+},
+"000030045": {
+"typeStr": "[Bhf/Hst]",
+"value": "Ellenfeld, Neunkirchen"
+},
+"000030046": {
+"typeStr": "[Bhf/Hst]",
+"value": "Steinstr., Neunkirchen"
+},
+"000030047": {
+"typeStr": "[Bhf/Hst]",
+"value": "Steinwald, Neunkirchen"
+},
+"000030049": {
+"typeStr": "[Bhf/Hst]",
+"value": "Talstr., Neunkirchen"
+},
+"000030054": {
+"typeStr": "[Bhf/Hst]",
+"value": "Zoo, Neunkirchen"
+},
+"000030055": {
+"typeStr": "[Bhf/Hst]",
+"value": "Schlesierweg, Neunkirchen"
+},
+"000030058": {
+"typeStr": "[Bhf/Hst]",
+"value": "Betzenh\u00f6lle, Neunkirchen"
+},
+"000030059": {
+"typeStr": "[Bhf/Hst]",
+"value": "Biedersberg, Neunkirchen"
+},
+"000030060": {
+"typeStr": "[Bhf/Hst]",
+"value": "Bliesstr., Neunkirchen"
+},
+"000030061": {
+"typeStr": "[Bhf/Hst]",
+"value": "ZAB, Neunkirchen"
+},
+"000030064": {
+"typeStr": "[Bhf/Hst]",
+"value": "Forsthaus, Neunkirchen"
+},
+"000030066": {
+"typeStr": "[Bhf/Hst]",
+"value": "Im Sand, Neunkirchen"
+},
+"000030068": {
+"typeStr": "[Bhf/Hst]",
+"value": "Rathaus, Neunkirchen"
+},
+"000030071": {
+"typeStr": "[Bhf/Hst]",
+"value": "Weidenweg, Neunkirchen"
+},
+"000030072": {
+"typeStr": "[Bhf/Hst]",
+"value": "Westspange, Neunkirchen"
+},
+"000030074": {
+"typeStr": "[Bhf/Hst]",
+"value": "Grube K\u00f6nig, Neunkirchen"
+},
+"000030076": {
+"typeStr": "[Bhf/Hst]",
+"value": "H\u00fcttenpark, Neunkirchen"
+},
+"000030086": {
+"typeStr": "[Bhf/Hst]",
+"value": "Lutherstr., Neunkirchen"
+},
+"000030092": {
+"typeStr": "[Bhf/Hst]",
+"value": "Mozartstr., Neunkirchen"
+},
+"000030093": {
+"typeStr": "[Bhf/Hst]",
+"value": "B\u00fcrgerhaus, Neunkirchen"
+},
+"000030094": {
+"typeStr": "[Bhf/Hst]",
+"value": "Gasstr., Neunkirchen"
+},
+"000030098": {
+"typeStr": "[Bhf/Hst]",
+"value": "ASW, Neunkirchen"
+},
+"000030301": {
+"typeStr": "[Bhf/Hst]",
+"value": "Heinitz, Neunkirchen"
+},
+"000033306": {
+"typeStr": "[Bhf/Hst]",
+"value": "Markt, Merchweiler"
+},
+"000035401": {
+"typeStr": "[Bhf/Hst]",
+"value": "Markt, Spiesen"
+},
+"000035503": {
+"typeStr": "[Bhf/Hst]",
+"value": "Markt, Elversberg"
+},
+"000040001": {
+"typeStr": "[Bhf/Hst]",
+"value": "Gro\u00dfer Markt (AST), Saarlouis"
+},
 "000040002": {
 "typeStr": "[Bhf/Hst]",
 "value": "GLOBUS, Saarlouis"
@@ -206,6 +842,10 @@
 "000040006": {
 "typeStr": "[Bhf/Hst]",
 "value": "Kaserne, Saarlouis"
+},
+"000040007": {
+"typeStr": "[Bhf/Hst]",
+"value": "ZOB Kleiner Markt, Saarlouis"
 },
 "000040027": {
 "typeStr": "[Bhf/Hst]",
@@ -215,21 +855,105 @@
 "typeStr": "[Bhf/Hst]",
 "value": "Pieper, Saarlouis"
 },
+"000041002": {
+"typeStr": "[Bhf/Hst]",
+"value": "Marktplatz, Dillingen"
+},
 "000041022": {
 "typeStr": "[Bhf/Hst]",
 "value": "Saardom, Dillingen"
+},
+"000045103": {
+"typeStr": "[Bhf/Hst]",
+"value": "Markt, Schwarzenholz Saarwellingen"
+},
+"000047704": {
+"typeStr": "[Bhf/Hst]",
+"value": "Markt, Hostenbach Wadgassen"
+},
+"000048005": {
+"typeStr": "[Bhf/Hst]",
+"value": "Markt, Werbeln Wadgassen"
 },
 "000049810": {
 "typeStr": "[Bhf/Hst]",
 "value": "Saarschacht, Ensdorf"
 },
+"000050084": {
+"typeStr": "[Bhf/Hst]",
+"value": "Marktplatz, Homburg"
+},
 "000050332": {
 "typeStr": "[Bhf/Hst]",
 "value": "Saar-Nadellager, Erbach Homburg"
 },
+"000050804": {
+"typeStr": "[Bhf/Hst]",
+"value": "Markt, Kirrberg Homburg"
+},
+"000051414": {
+"typeStr": "[Bhf/Hst]",
+"value": "Markt, Bexbach"
+},
+"000051503": {
+"typeStr": "[Bhf/Hst]",
+"value": "Markt, Oberbexbach Bexbach"
+},
+"000051704": {
+"typeStr": "[Bhf/Hst]",
+"value": "Markt, H\u00f6chen Bexbach"
+},
+"000057702": {
+"typeStr": "[Bhf/Hst]",
+"value": "Marktplatz, Hassel St.Ingbert"
+},
 "000060036": {
 "typeStr": "[Bhf/Hst]",
 "value": "Dillinger Str./Dudweilerstr., St.Wendel"
+},
+"000063002": {
+"typeStr": "[Bhf/Hst]",
+"value": "Markt, Marpingen"
+},
+"000063302": {
+"typeStr": "[Bhf/Hst]",
+"value": "Markt, Urexweiler Marpingen"
+},
+"000066902": {
+"typeStr": "[Bhf/Hst]",
+"value": "Marktplatz, Otzenhausen Nonnweiler"
+},
+"000067202": {
+"typeStr": "[Bhf/Hst]",
+"value": "Markt, Sitzerath Nonnweiler"
+},
+"000080001": {
+"typeStr": "[Bhf/Hst]",
+"value": "Marktstr., Kaiserslautern"
+},
+"000087601": {
+"typeStr": "[Bhf/Hst]",
+"value": "Herren-Sulzbach Wartehalle"
+},
+"000087602": {
+"typeStr": "[Bhf/Hst]",
+"value": "Herren-Sulzbach Abzw"
+},
+"000089901": {
+"typeStr": "[Bhf/Hst]",
+"value": "Neunkirchen/Pfalz Ortsmitte"
+},
+"000093503": {
+"typeStr": "[Bhf/Hst]",
+"value": "Wolfstein Markt"
+},
+"000098210": {
+"typeStr": "[Bhf/Hst]",
+"value": "Osburg Marktplatz"
+},
+"000099601": {
+"typeStr": "[Bhf/Hst]",
+"value": "Baumholder Markt"
 },
 "000112602": {
 "typeStr": "[Bhf/Hst]",
@@ -239,9 +963,37 @@
 "typeStr": "[Bhf/Hst]",
 "value": "Guckelsberg, Dudweiler Saarbr\u00fccken"
 },
+"000130050": {
+"typeStr": "[Bhf/Hst]",
+"value": "CITY, Neunkirchen"
+},
 "000147903": {
 "typeStr": "[Bhf/Hst]",
 "value": "Saarstr., Wadgassen"
+},
+"000212201": {
+"typeStr": "[Bhf/Hst]",
+"value": "Burbacher Markt, Saarbr\u00fccken Burbach"
+},
+"000607506": {
+"typeStr": "[Bhf/Hst]",
+"value": "IO Idar Markt"
+},
+"000607626": {
+"typeStr": "[Bhf/Hst]",
+"value": "Veitsrodt Markt"
+},
+"000607636": {
+"typeStr": "[Bhf/Hst]",
+"value": "Sulzbach (Hunsr\u00fcck) Gemeindehaus"
+},
+"000607688": {
+"typeStr": "[Bhf/Hst]",
+"value": "Rhaunen Markt"
+},
+"000608825": {
+"typeStr": "[Bhf/Hst]",
+"value": "Sulzbach (Hunsr\u00fcck) Feuerwehr"
 },
 "008000075": {
 "typeStr": "[Bhf/Hst]",
@@ -307,6 +1059,10 @@
 "typeStr": "[Bhf/Hst]",
 "value": "Illingen (Saar)"
 },
+"008003108": {
+"typeStr": "[Bhf/Hst]",
+"value": "J\u00e4gersfreude"
+},
 "008003684": {
 "typeStr": "[Bhf/Hst]",
 "value": "Limbach (b Homburg,Saar)"
@@ -371,8 +1127,28 @@
 "typeStr": "[Bhf/Hst]",
 "value": "W\u00fcrzbach (Saar)"
 },
+"008200002": {
+"typeStr": "[Bhf/Hst]",
+"value": "Dudelange-Burange"
+},
+"008200003": {
+"typeStr": "[Bhf/Hst]",
+"value": "Dudelange-Centre"
+},
+"008200613": {
+"typeStr": "[Bhf/Hst]",
+"value": "Dudelange-Ville"
+},
+"008270370": {
+"typeStr": "[Bhf/Hst]",
+"value": "Dudelange-Usines"
+},
 "008700439": {
 "typeStr": "[Bhf/Hst]",
 "value": "Saargem\u00fcnd (F)"
+},
+"008701047": {
+"typeStr": "[Bhf/Hst]",
+"value": "Duppigheim"
 }
 }
