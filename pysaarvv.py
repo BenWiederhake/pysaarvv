@@ -196,11 +196,11 @@ def resolve_alias(name_frag, aliases, stations):
 
 
 def resolve_station(name_frag, stations):
-    for (name, target) in stations.items():
+    for (name, entry) in stations.items():
         if name_frag not in name:
             continue
         entry = dict(entry)  # Copy
-        entry['value'] = target
+        entry['value'] = name
         entry['by'] = 'station'
         yield entry
     yield from []

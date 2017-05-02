@@ -17,28 +17,66 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import json
+import os
 import pysaarvv
 import sys
 
 
 # ===== Building blocks =====
 
-def cmd_list(args):
-    return 'unimplemented'
+MAX_PRINT_MATCHES = 30
+
+if 'PYSAARVV_MAX_PRINT' in os.environ:
+    MAX_PRINT_MATCHES = int(os.environ['PYSAARVV_MAX_PRINT'])
 
 
-def cmd_set(args):
-    return 'unimplemented'
+def display(station):
+    # In the future, I might want to do pretty/prettier printing,
+    # so all output should be bundled.
+    print('{}  {}'.format(station['typeStr'], station['value']))
 
 
-def cmd_show(args):
+def cmd_ls(cmd, args, as_station=True, as_alias=True):
+    if len(args) > 1:
+        return '"{}" needs exactly one argument'.format(cmd)
+    arg = args[0] if len(args) == 1 else ""  # Empty string behaves like match-all.
+    # Fuck performance.
+
+    matches = pysaarvv.resolve(arg, as_station=as_station, as_alias=as_alias)
+    pattern = '???'
+    if len(matches) < 1:
+        pattern = 'Found no matches.'
+    elif len(matches) <= 1:
+        pattern = 'Found one match:'
+    elif len(matches) <= MAX_PRINT_MATCHES:
+        pattern = 'Found {} matches:'
+    else:
+        pattern = 'Found {} matches, displaying only {}:'
+
+    print(pattern.format(len(matches), MAX_PRINT_MATCHES))
+    for m in matches[:MAX_PRINT_MATCHES]:
+        display(m)
+
+    return None
+
+
+def cmd_ls_alias(cmd, args):
+    return cmd_ls(args, as_station=False)
+
+
+def cmd_ls_station(cmd, args):
+    return cmd_ls(args, as_alias=False)
+
+
+def cmd_alias(cmd, args):
     return 'unimplemented'
 
 
 COMMANDS = {
-    'list': cmd_list,
-    'set': cmd_set,
-    'show': cmd_show,
+    'ls': cmd_ls,
+    'ls-alias': cmd_ls_alias,
+    'ls-station': cmd_ls_station,
+    'alias': cmd_alias,
 }
 
 
@@ -48,24 +86,27 @@ USAGE = """USAGE: {prog} <COMMAND> <ARGS>
 Manages aliases.  With this, you don't need to remember any ID,
 because {prog} does it for you.
 
-{prog} list {{ --alias | --station | --unaliased }} [ <NAME_PART> ]
-Lists the respective thing.  <NAME_FRAG> filters the list:
+{prog} ls [ <NAME_FRAG> ]
+Lists all aliases and stations.  <NAME_FRAG> filters the list:
 Matching elements need to have <NAME_FRAG> as substring.
---alias: All defined aliases.
---station: All known stations.
---unaliased: All known stations which do not have an alias.
+Note that this might produce duplicates.
 
-{prog} set <ALIAS> <ID_OR_ALIAS_OR_NAME_FRAG>
-Sets a new alias <ALIAS> for <ID_OR_ALIAS_OR_NAME_FRAG>.
+{prog} ls-alias [ <NAME_FRAG> ]
+Lists all aliases.  <NAME_FRAG> filters the list:
+Matching elements need to have <NAME_FRAG> as substring in the alias itself.
+
+{prog} ls-station [ <NAME_FRAG> ]
+Lists all known stations.  <NAME_FRAG> filters the list:
+Matching elements need to have <NAME_FRAG> as substring.
+
+{prog} alias <ALIAS> <ALIAS_OR_NAME_FRAG>
+Sets a new alias <ALIAS> for <ALIAS_OR_NAME_FRAG>.
 Aliases must not start with a zero.
 The latter may be either of:
-- A SaarVV-internal ID like "000010043".
 - A known alias.  Note that this alias is immediately resolved;
   in other words, it's not a "symbolic link".
-- A name fragment.  There must be exactly one known station with this name fragment
-
-{prog} show {{ <ID> | <ALIAS> }}
-Shows information about the ID or alias.
+- A name fragment.  There must be exactly one
+  known station matching this name fragment
 """
 
 
@@ -74,7 +115,7 @@ def run(cmd, args):
     if cmd_fn is None:
         return 'Unrecognized command "{}".'.format(cmd)
     else:
-        return cmd_fn(args)
+        return cmd_fn(cmd, args)
 
 
 if __name__ == '__main__':
