@@ -16,21 +16,91 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import os
 import requests
 import time
 
+# Sigh.  C'mon, your software is from 2012, and it's 2017.
+# There was UTF-8 even in 2012.
+SERVER_ENCODING = "iso-8859-1"
+# Might be Windows-1252 after all, but AFAIK our busstops
+# don't use those dirty characters.
+
+# Must be kept valid ISO 8859-1!
+Q_URL = 'http://www.saarfahrplan.de/cgi-bin/query.exe/dn?OK'
+
+# Unicode is fine here.
+Q_HEADERS = {
+    # Pretend to be Firefox for most purposes.  However, also be easily
+    # identifyable in case they have a problem due to me,
+    # and also provide an easy way to reach out to me.
+    # "LovelySwampNeedle" has zero results on Google.
+    # This is about to change! :D
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0; '
+                  'Contact:BenWiederhake_DOT_GitHub_AT_gmx_DOT_de) '
+                  'Gecko/20100101 Firefox/45.0 LovelySwampNeedle/0.1',
+    # Just in case they filter for that.
+    'Referer': 'http://www.saarfahrplan.de/cgi-bin/query.exe/dn?',
+}
+
+# Unicode is fine here.
+Q_PARAMETERS = {
+    # I'll need to be able to change these
+    'REQ0JourneyStopsS0G': 'Universität+Busterminal,+Saarbrücken',
+    'REQ0JourneyStopsS0ID': 'A=1@O=Universität+Busterminal,+Saarbrücken@X=7047722@Y=49257731@U=80@L=000010909@B=1@V=11.9,@p=1493479481@',
+    'REQ0JourneyStopsZ0G': 'Markt,+Dudweiler+Saarbrücken',
+    'REQ0JourneyStopsZ0ID': 'A=1@O=Markt,+Dudweiler+Saarbrücken@X=7035856@Y=49275521@U=80@L=000012607@B=1@V=11.9,@p=1493479481@',
+    'REQ0JourneyDate': 'Di,+02.05.17',
+    'REQ0JourneyTime': '19:50',
+    # Whatever.
+    'queryPageDisplayed': 'yes',
+    'REQ0JourneyStopsS0A': '255',
+    'ignoreTypeCheck': 'yes',
+    'REQ0JourneyStopsZ0A': '255',
+    'existUnsharpSearch': 'yes',
+    'iER': 'no',
+    'wDayExt0': 'Mo|Di|Mi|Do|Fr|Sa|So',
+    'REQ0HafasSearchForw': '1',
+    'REQ0JourneyProduct_prod_list': '1:1111111111000000',  # Change your products here
+    'existBikeEverywhere': 'yes',
+    'REQ0HafasChangeTime': '0:1',
+    'start': 'Verbindungen+suchen',
+}
+
+
+def encode_dict(d):
+    return {k.encode(SERVER_ENCODING): v.encode(SERVER_ENCODING)
+            for (k, v) in d.items()}
+
 
 def get_raw():
-    payload = dict()
-    r = requests.post(url, data=payload)
-    content = r.content
-    name = 'response_{}.html'.format(time.time())
-    print('[GET_RAW] Saved response to {}'.format(name))
+    # Prepare parameters (stub)
+    payload = Q_PARAMETERS
+
+    # Actual query
+    # URL is safe, everything else must be converted first.
+    r = requests.post(Q_URL, headers=encode_dict(Q_HEADERS),
+                      data=encode_dict(payload))
+    print('Guessed encoding: ' + r.encoding)
+
+    # Save to disk in case something horrible happens
+    t = time.time()
+    name = 'response_{}_raw.html'.format(t)
+    print('[GET_RAW] Saved response content to {}'.format(name))
     path = os.path.join('responses', name)
     with open(path, 'wb') as fp:
-        fp.write(content)
-    return content
+        fp.write(r.content)
+    name = 'response_text_{}_{}.html'.format(t, r.encoding)  # Save myself some work
+    print('[GET_RAW] Saved response text to {}'.format(name))
+    path = os.path.join('responses', name)
+    text = r.text
+    with open(path, 'wb') as fp:
+        fp.write(text.encode())
+
+    # All done
+    return r.text
 
 
 if __name__ == '__main__':
+    get_raw()
     print('Hello World!')
