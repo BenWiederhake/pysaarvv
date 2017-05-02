@@ -179,6 +179,46 @@ def get_stations():
     return json.load(open(SYS_STATIONS, 'r'))
 
 
+def resolve_alias(name_frag, aliases, stations):
+    for (name, target) in aliases.items():
+        if name_frag not in name:
+            continue
+        entry = stations.get(target)
+        if entry is None:
+            print('BROKEN ALIAS: {} => {}'.format(name, target))
+            continue
+        entry = dict(entry)  # Copy
+        entry['value'] = target
+        entry['by'] = 'alias'
+        entry['alias'] = name
+        yield entry
+    yield from []
+
+
+def resolve_station(name_frag, stations):
+    for (name, target) in stations.items():
+        if name_frag not in name:
+            continue
+        entry = dict(entry)  # Copy
+        entry['value'] = target
+        entry['by'] = 'station'
+        yield entry
+    yield from []
+
+
+def resolve(name_frag, as_alias=True, as_station=True, aliases=None, stations=None):
+    found = []
+    if stations is None:
+        stations = get_stations()
+    if as_station:
+        found.extend(resolve_station(name_frag, stations))
+    if as_alias:
+        if aliases is None:
+            aliases = get_aliases()
+        found.extend(resolve_alias(name_frag, aliases, stations))
+    return found
+
+
 if __name__ == '__main__':
     print('Parsed as these suggestions:')
     #get_suggestions_raw()
