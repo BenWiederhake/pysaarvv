@@ -25,9 +25,10 @@ Use anything that SaarVV might recognize as <NAME_PART>.
 New stations are automatically merged into {SYS_STATIONS}.
 """
 
-USE_FIELDS = {'typeStr', 'value'}
-# Ignored: 'state', 'type', 'ycoord', 'xcoord', 'id', 'prodClass', 'weight'
-# Note that 'id' is NOT anything even remotely usable.
+USE_FIELDS = {'typeStr', 'extId', 'id'}
+# Ignored: 'state', 'type', 'ycoord', 'xcoord', 'prodClass', 'weight'
+# Note that 'extId' is NOT unique.
+# Use 'value' as ID.
 
 
 def extend(stations, name_part, verbose=True):
@@ -35,18 +36,22 @@ def extend(stations, name_part, verbose=True):
     sugg_list = pysaarvv.parse_suggestions(sugg_raw)
     print('Got {} responses.'.format(len(sugg_list)))
     counter = 0
+    last_skip = None
 
     for sugg in sugg_list:
-        ID = sugg['extId']
+        ID = sugg['value']
         if ID in stations:
             # Boring, known.
+            last_skip = ID
             continue
         entry = {k: v for (k, v) in sugg.items() if k in USE_FIELDS}
         if verbose:
-            print('New entry {} for ID {}'.format(entry, ID))
+            print('New place: {}'.format(ID))
         counter += 1
         stations[ID] = entry
 
+    if last_skip is not None:
+        print('Skipped some known entries, e.g.: {}'.format(last_skip))
     print('Done extending.  Saw {} new station(s).'.format(counter))
     return stations
 
