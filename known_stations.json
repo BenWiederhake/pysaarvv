@@ -204,6 +204,16 @@
 "id": "A=1@O=Altersheim, Neuweiler Sulzbach@X=7073845@Y=49281301@U=80@L=000018201@B=1@V=11.9,@p=1493479481@",
 "typeStr": "[Bhf/Hst]"
 },
+"Altes Rathaus, Saarwellingen": {
+"extId": "000044904",
+"id": "A=1@O=Altes Rathaus, Saarwellingen@X=6803117@Y=49348945@U=80@L=000044904@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
+"Altes Rathaus, V\u00f6lklingen": {
+"extId": "000018512",
+"id": "A=1@O=Altes Rathaus, V\u00f6lklingen@X=6853879@Y=49249353@U=80@L=000018512@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
 "Altgasse, Altenkessel Saarbr\u00fccken": {
 "extId": "000012010",
 "id": "A=1@O=Altgasse, Altenkessel Saarbr\u00fccken@X=6910250@Y=49261516@U=80@L=000012010@B=1@V=11.9,@p=1493479481@",
@@ -1264,6 +1274,16 @@
 "id": "A=1@O=Detemple, G\u00f6ttelborn Quierschied@X=7027065@Y=49344001@U=80@L=000017309@B=1@V=11.9,@p=1493479481@",
 "typeStr": "[Bhf/Hst]"
 },
+"Deutsch-Franz. Garten DFG Nord, Saarbr\u00fccken": {
+"extId": "000010014",
+"id": "A=1@O=Deutsch-Franz. Garten DFG Nord, Saarbr\u00fccken@X=6961444@Y=49229874@U=80@L=000010014@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
+"Deutsch-Franz. Garten DFG S\u00fcd, Saarbr\u00fccken": {
+"extId": "000010021",
+"id": "A=1@O=Deutsch-Franz. Garten DFG S\u00fcd, Saarbr\u00fccken@X=6971817@Y=49221163@U=80@L=000010021@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
 "Deutsche Rentenvers. Saarland, Saarbr\u00fccken": {
 "extId": "000010630",
 "id": "A=1@O=Deutsche Rentenvers. Saarland, Saarbr\u00fccken@X=7003954@Y=49237146@U=80@L=000010630@B=1@V=11.9,@p=1493479481@",
@@ -1412,6 +1432,11 @@
 "Elschbach Kirche": {
 "extId": "000078953",
 "id": "A=1@O=Elschbach Kirche@X=7428595@Y=49417362@U=80@L=000078953@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
+"Enkenbach Rathaus": {
+"extId": "000079002",
+"id": "A=1@O=Enkenbach Rathaus@X=7897805@Y=49487316@U=80@L=000079002@B=1@V=11.9,@p=1493479481@",
 "typeStr": "[Bhf/Hst]"
 },
 "Enkircher Weg, Saarbr\u00fccken Malstatt": {
@@ -3384,6 +3409,11 @@
 "id": "A=1@O=Kusel Krankenhaus Vorplatz@X=7378220@Y=49545827@U=80@L=000091904@B=1@V=11.9,@p=1493479481@",
 "typeStr": "[Bhf/Hst]"
 },
+"Kusel Rathaus": {
+"extId": "000090030",
+"id": "A=1@O=Kusel Rathaus@X=7400252@Y=49537583@U=80@L=000090030@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
 "Kusel VdK-Heim": {
 "extId": "000090021",
 "id": "A=1@O=Kusel VdK-Heim@X=7404100@Y=49529781@U=80@L=000090021@B=1@V=11.9,@p=1493479481@",
@@ -3829,6 +3859,11 @@
 "id": "A=1@O=Martinsh\u00f6he Friedhof@X=7482450@Y=49369917@U=80@L=000083506@B=1@V=11.9,@p=1493479481@",
 "typeStr": "[Bhf/Hst]"
 },
+"Martinsh\u00f6he Rathaus": {
+"extId": "000083502",
+"id": "A=1@O=Martinsh\u00f6he Rathaus@X=7479852@Y=49364146@U=80@L=000083502@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
 "Matzenberg Siedlung, Saarbr\u00fccken Burbach": {
 "extId": "000012219",
 "id": "A=1@O=Matzenberg Siedlung, Saarbr\u00fccken Burbach@X=6922242@Y=49248607@U=80@L=000012219@B=1@V=11.9,@p=1493479481@",
@@ -4012,6 +4047,21 @@
 "Neue Welt, H\u00fclzweiler Schwalbach": {
 "extId": "000046504",
 "id": "A=1@O=Neue Welt, H\u00fclzweiler Schwalbach@X=6806272@Y=49319155@U=80@L=000046504@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
+"Neues Rathaus, Bisten \u00dcberherrn": {
+"extId": "000047001",
+"id": "A=1@O=Neues Rathaus, Bisten \u00dcberherrn@X=6696954@Y=49250153@U=80@L=000047001@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
+"Neues Rathaus, Merzig": {
+"extId": "000020002",
+"id": "A=1@O=Neues Rathaus, Merzig@X=6637446@Y=49442163@U=80@L=000020002@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
+"Neues Rathaus, V\u00f6lklingen": {
+"extId": "000018525",
+"id": "A=1@O=Neues Rathaus, V\u00f6lklingen@X=6860324@Y=49251349@U=80@L=000018525@B=1@V=11.9,@p=1493479481@",
 "typeStr": "[Bhf/Hst]"
 },
 "Neuforweilerweg, Picard Saarlouis": {
@@ -4414,9 +4464,64 @@
 "id": "A=1@O=Rathaus, Altenkessel Saarbr\u00fccken@X=6917046@Y=49261624@U=80@L=000012005@B=1@V=11.9,@p=1493479481@",
 "typeStr": "[Bhf/Hst]"
 },
+"Rathaus, Beckingen": {
+"extId": "000021912",
+"id": "A=1@O=Rathaus, Beckingen@X=6700918@Y=49388246@U=80@L=000021912@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
 "Rathaus, Brebach Saarbr\u00fccken": {
 "extId": "000013503",
 "id": "A=1@O=Rathaus, Brebach Saarbr\u00fccken@X=7047057@Y=49206304@U=80@L=000013503@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
+"Rathaus, Ensdorf": {
+"extId": "000049809",
+"id": "A=1@O=Rathaus, Ensdorf@X=6777174@Y=49308367@U=80@L=000049809@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
+"Rathaus, Ensheim Saarbr\u00fccken": {
+"extId": "000013402",
+"id": "A=1@O=Rathaus, Ensheim Saarbr\u00fccken@X=7108606@Y=49204524@U=80@L=000013402@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
+"Rathaus, Eppelborn": {
+"extId": "000031504",
+"id": "A=1@O=Rathaus, Eppelborn@X=6963269@Y=49405361@U=80@L=000031504@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
+"Rathaus, Erfenbach Kaiserslautern": {
+"extId": "000080038",
+"id": "A=1@O=Rathaus, Erfenbach Kaiserslautern@X=7712259@Y=49481662@U=80@L=000080038@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
+"Rathaus, Erlenbach Kaiserslautern": {
+"extId": "000079813",
+"id": "A=1@O=Rathaus, Erlenbach Kaiserslautern@X=7770140@Y=49480304@U=80@L=000079813@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
+"Rathaus, Freisen": {
+"extId": "000061901",
+"id": "A=1@O=Rathaus, Freisen@X=7251427@Y=49548487@U=80@L=000061901@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
+"Rathaus, Gersheim": {
+"extId": "000054301",
+"id": "A=1@O=Rathaus, Gersheim@X=7204206@Y=49146157@U=80@L=000054301@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
+"Rathaus, Heiligenwald Schiffweiler": {
+"extId": "000034705",
+"id": "A=1@O=Rathaus, Heiligenwald Schiffweiler@X=7097837@Y=49357035@U=80@L=000034705@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
+"Rathaus, Heusweiler": {
+"extId": "000115500",
+"id": "A=1@O=Rathaus, Heusweiler@X=6930665@Y=49335865@U=80@L=000115500@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
+"Rathaus, Illingen": {
+"extId": "000032403",
+"id": "A=1@O=Rathaus, Illingen@X=7047767@Y=49379472@U=80@L=000032403@B=1@V=11.9,@p=1493479481@",
 "typeStr": "[Bhf/Hst]"
 },
 "Rathaus, Klarenthal Saarbr\u00fccken": {
@@ -4429,14 +4534,99 @@
 "id": "A=1@O=Rathaus, Limbach Kirkel@X=7278017@Y=49316997@U=80@L=000055901@B=1@V=11.9,@p=1493479481@",
 "typeStr": "[Bhf/Hst]"
 },
+"Rathaus, Marpingen": {
+"extId": "000063004",
+"id": "A=1@O=Rathaus, Marpingen@X=7057709@Y=49450604@U=80@L=000063004@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
+"Rathaus, Merchweiler": {
+"extId": "000033305",
+"id": "A=1@O=Rathaus, Merchweiler@X=7059930@Y=49360289@U=80@L=000033305@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
+"Rathaus, Morlautern Kaiserslautern": {
+"extId": "000800222",
+"id": "A=1@O=Rathaus, Morlautern Kaiserslautern@X=7763722@Y=49467459@U=80@L=000800222@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
+"Rathaus, Neunkirchen": {
+"extId": "000030068",
+"id": "A=1@O=Rathaus, Neunkirchen@X=7179243@Y=49342104@U=80@L=000030068@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
+"Rathaus, Oberthal": {
+"extId": "000067603",
+"id": "A=1@O=Rathaus, Oberthal@X=7089882@Y=49511811@U=80@L=000067603@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
+"Rathaus, Ormesheim Mandelbachtal": {
+"extId": "000057003",
+"id": "A=1@O=Rathaus, Ormesheim Mandelbachtal@X=7142783@Y=49196757@U=80@L=000057003@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
 "Rathaus, Ottweiler": {
 "extId": "000033828",
 "id": "A=1@O=Rathaus, Ottweiler@X=7162353@Y=49405936@U=80@L=000033828@B=1@V=11.9,@p=1493479481@",
 "typeStr": "[Bhf/Hst]"
 },
+"Rathaus, P\u00fcttlingen": {
+"extId": "000016813",
+"id": "A=1@O=Rathaus, P\u00fcttlingen@X=6881862@Y=49287935@U=80@L=000016813@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
+"Rathaus, Riegelsberg": {
+"extId": "000017512",
+"id": "A=1@O=Rathaus, Riegelsberg@X=6944931@Y=49301077@U=80@L=000017512@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
 "Rathaus, Saarbr\u00fccken": {
 "extId": "000010611",
 "id": "A=1@O=Rathaus, Saarbr\u00fccken@X=6996124@Y=49235042@U=80@L=000010611@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
+"Rathaus, Schiffweiler": {
+"extId": "000034918",
+"id": "A=1@O=Rathaus, Schiffweiler@X=7129965@Y=49370798@U=80@L=000034918@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
+"Rathaus, St.Wendel": {
+"extId": "000060032",
+"id": "A=1@O=Rathaus, St.Wendel@X=7169985@Y=49466919@U=80@L=000060032@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
+"Rathaus, Sulzbach": {
+"extId": "000017807",
+"id": "A=1@O=Rathaus, Sulzbach@X=7061440@Y=49299207@U=80@L=000017807@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
+"Rathaus, Wadgassen": {
+"extId": "000147901",
+"id": "A=1@O=Rathaus, Wadgassen@X=6803872@Y=49266352@U=80@L=000147901@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
+"Rathaus, Wallerfangen": {
+"extId": "000048307",
+"id": "A=1@O=Rathaus, Wallerfangen@X=6718429@Y=49328737@U=80@L=000048307@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
+"Rathaus, Wemmetsweiler Merchweiler": {
+"extId": "000033404",
+"id": "A=1@O=Rathaus, Wemmetsweiler Merchweiler@X=7088470@Y=49369413@U=80@L=000033404@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
+"Rathausplatz, P\u00fcttlingen": {
+"extId": "000016811",
+"id": "A=1@O=Rathausplatz, P\u00fcttlingen@X=6882788@Y=49288295@U=80@L=000016811@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
+"Rathausplatz, Tholey": {
+"extId": "000069003",
+"id": "A=1@O=Rathausplatz, Tholey@X=7032450@Y=49482210@U=80@L=000069003@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
+"Rathausstr., Bexbach": {
+"extId": "000051426",
+"id": "A=1@O=Rathausstr., Bexbach@X=7252586@Y=49350167@U=80@L=000051426@B=1@V=11.9,@p=1493479481@",
 "typeStr": "[Bhf/Hst]"
 },
 "Rehweiler": {
@@ -5799,6 +5989,11 @@
 "id": "A=1@O=Wellesweilerstr., Neunkirchen@X=7179522@Y=49352136@U=80@L=000030052@B=1@V=11.9,@p=1493479481@",
 "typeStr": "[Bhf/Hst]"
 },
+"Wemmetsweiler Rathaus (DB)": {
+"extId": "008000378",
+"id": "A=1@O=Wemmetsweiler Rathaus (DB)@X=7085935@Y=49369521@U=80@L=008000378@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
 "Weselberg Kirche": {
 "extId": "000075402",
 "id": "A=1@O=Weselberg Kirche@X=7606024@Y=49334355@U=80@L=000075402@B=1@V=11.9,@p=1493479481@",
@@ -5932,6 +6127,11 @@
 "Wustweiler": {
 "extId": "008006627",
 "id": "A=1@O=Wustweiler@X=7034832@Y=49398898@U=80@L=008006627@B=1@V=11.9,@p=1493479481@",
+"typeStr": "[Bhf/Hst]"
+},
+"W\u00f6rth(Rhein) Rathaus": {
+"extId": "008079211",
+"id": "A=1@O=W\u00f6rth(Rhein) Rathaus@X=8249805@Y=49052427@U=80@L=008079211@B=1@V=11.9,@p=1493479481@",
 "typeStr": "[Bhf/Hst]"
 },
 "ZF Tor 1, Saarbr\u00fccken": {
