@@ -227,11 +227,3 @@ def resolve_iter(name_frag, stations, aliases=None):
     if len(found) >= 1:
         return found
     return resolve(name_frag, as_alias=False, stations=stations)
-
-
-if __name__ == '__main__':
-    print('Parsed as these suggestions:')
-    #get_suggestions_raw()
-    with open('responses/response_1493755813.3408453_text_ISO-8859-1.html', 'r') as fp:
-        print(parse_suggestions(fp.read()))
-    print('Done.')
