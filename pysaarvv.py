@@ -180,8 +180,9 @@ def get_stations():
 
 
 def resolve_alias(name_frag, aliases, stations):
+    name_frag = name_frag.lower()
     for (name, target) in aliases.items():
-        if name_frag not in name:
+        if name_frag not in name.lower():
             continue
         entry = stations.get(target)
         if entry is None:
@@ -196,8 +197,9 @@ def resolve_alias(name_frag, aliases, stations):
 
 
 def resolve_station(name_frag, stations):
+    name_frag = name_frag.lower()
     for (name, entry) in stations.items():
-        if name_frag not in name:
+        if name_frag not in name.lower():
             continue
         entry = dict(entry)  # Copy
         entry['value'] = name
@@ -217,6 +219,14 @@ def resolve(name_frag, as_alias=True, as_station=True, aliases=None, stations=No
             aliases = get_aliases()
         found.extend(resolve_alias(name_frag, aliases, stations))
     return found
+
+
+def resolve_iter(name_frag, stations, aliases=None):
+    name_frag = name_frag.lower()
+    found = resolve(name_frag, as_station=False, aliases=aliases, stations=stations)
+    if len(found) >= 1:
+        return found
+    return resolve(name_frag, as_alias=False, stations=stations)
 
 
 if __name__ == '__main__':

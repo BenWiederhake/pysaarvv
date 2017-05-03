@@ -36,13 +36,7 @@ def display(station):
     print('{}  {}'.format(station['typeStr'], station['value']))
 
 
-def cmd_ls(cmd, args, as_station=True, as_alias=True):
-    if len(args) > 1:
-        return '"{}" needs exactly one argument'.format(cmd)
-    arg = args[0] if len(args) == 1 else ""  # Empty string behaves like match-all.
-    # Fuck performance.
-
-    matches = pysaarvv.resolve(arg, as_station=as_station, as_alias=as_alias)
+def display_many(matches):
     pattern = '???'
     if len(matches) < 1:
         pattern = 'Found no matches.'
@@ -57,6 +51,16 @@ def cmd_ls(cmd, args, as_station=True, as_alias=True):
     for m in matches[:MAX_PRINT_MATCHES]:
         display(m)
 
+
+def cmd_ls(cmd, args, as_station=True, as_alias=True):
+    if len(args) > 1:
+        return '"{}" needs exactly one argument'.format(cmd)
+    arg = args[0] if len(args) == 1 else ""  # Empty string behaves like match-all.
+    # Fuck performance.
+
+    matches = pysaarvv.resolve(arg, as_station=as_station, as_alias=as_alias)
+    display_many(matches)
+
     return None
 
 
@@ -69,7 +73,21 @@ def cmd_ls_station(cmd, args):
 
 
 def cmd_alias(cmd, args):
-    return 'unimplemented'
+    if len(args) != 2:
+        return '"{}" needs exactly two arguments: the new name and the '.format(cmd)
+    stations = pysaarvv.get_stations()
+    aliases = pysaarvv.get_aliases()
+    matches = pysaarvv.resolve_iter(args[1], stations, aliases)
+    display_many(matches)
+    if len(matches) < 1:
+        return 'Not found!  Try something less specific.'
+    if len(matches) > 1:
+        return 'Not unique!  Try something more specific.'
+    print('Installing alias ...')
+    aliases[args[0]] = matches[0]['value']
+    json.dump(aliases, open(pysaarvv.USER_ALIASES, 'w'),
+        # Allow for easy versioning of the result
+        indent='', sort_keys=True)
 
 
 COMMANDS = {
@@ -101,7 +119,6 @@ Matching elements need to have <NAME_FRAG> as substring.
 
 {prog} alias <ALIAS> <ALIAS_OR_NAME_FRAG>
 Sets a new alias <ALIAS> for <ALIAS_OR_NAME_FRAG>.
-Aliases must not start with a zero.
 The latter may be either of:
 - A known alias.  Note that this alias is immediately resolved;
   in other words, it's not a "symbolic link".
@@ -120,12 +137,12 @@ def run(cmd, args):
 
 if __name__ == '__main__':
     if len(sys.argv) < 2:
-        err = 'Need a command.'
-    else:
-        err = run(sys.argv[1], sys.argv[2:])
-    
-    if err is not None:
         print(err)
         print()
         print(USAGE.format(prog=sys.argv[0]))
         exit(1)
+    else:
+        err = run(sys.argv[1], sys.argv[2:])
+        if err is not None:
+            print(err)
+            exit(1)
