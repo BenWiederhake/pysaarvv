@@ -235,7 +235,11 @@ def resolve_iter(name_frag, stations, aliases=None):
 def display(station):
     # In the future, I might want to do pretty/prettier printing,
     # so all output should be bundled.
-    print('{}  {}'.format(station['typeStr'], station['value']))
+    pattern = '{:60s}'
+    # FIXME: 60 shouldn't be hardcoded!
+    if 'alias' in station:
+        pattern += '  [{}]'
+    print(pattern.format(station['value'], station.get('alias')))
 
 
 def display_many(matches):
