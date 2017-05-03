@@ -24,52 +24,25 @@ import sys
 
 # ===== Building blocks =====
 
-MAX_PRINT_MATCHES = 30
-
-if 'PYSAARVV_MAX_PRINT' in os.environ:
-    MAX_PRINT_MATCHES = int(os.environ['PYSAARVV_MAX_PRINT'])
-
-
-def display(station):
-    # In the future, I might want to do pretty/prettier printing,
-    # so all output should be bundled.
-    print('{}  {}'.format(station['typeStr'], station['value']))
-
-
-def display_many(matches):
-    pattern = '???'
-    if len(matches) < 1:
-        pattern = 'Found no matches.'
-    elif len(matches) <= 1:
-        pattern = 'Found one match:'
-    elif len(matches) <= MAX_PRINT_MATCHES:
-        pattern = 'Found {} matches:'
-    else:
-        pattern = 'Found {} matches, displaying only {}:'
-
-    print(pattern.format(len(matches), MAX_PRINT_MATCHES))
-    for m in matches[:MAX_PRINT_MATCHES]:
-        display(m)
-
-
 def cmd_ls(cmd, args, as_station=True, as_alias=True):
     if len(args) > 1:
         return '"{}" needs exactly one argument'.format(cmd)
     arg = args[0] if len(args) == 1 else ""  # Empty string behaves like match-all.
     # Fuck performance.
 
-    matches = pysaarvv.resolve(arg, as_station=as_station, as_alias=as_alias)
-    display_many(matches)
+    matches = pysaarvv.resolve(arg, pysaarvv.get_stations(),
+                               as_station=as_station, as_alias=as_alias)
+    pysaarvv.display_many(matches)
 
     return None
 
 
 def cmd_ls_alias(cmd, args):
-    return cmd_ls(args, as_station=False)
+    return cmd_ls(cmd, args, as_station=False)
 
 
 def cmd_ls_station(cmd, args):
-    return cmd_ls(args, as_alias=False)
+    return cmd_ls(cmd, args, as_alias=False)
 
 
 def cmd_alias(cmd, args):
@@ -78,7 +51,7 @@ def cmd_alias(cmd, args):
     stations = pysaarvv.get_stations()
     aliases = pysaarvv.get_aliases()
     matches = pysaarvv.resolve_iter(args[1], stations, aliases)
-    display_many(matches)
+    pysaarvv.display_many(matches)
     if len(matches) < 1:
         return 'Not found!  Try something less specific.'
     if len(matches) > 1:

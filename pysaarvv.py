@@ -86,6 +86,11 @@ SUGG_PARAMETERS = {
     'tpl': 'suggest2json',
 }
 
+MAX_PRINT_MATCHES = 30
+
+if 'PYSAARVV_MAX_PRINT' in os.environ:
+    MAX_PRINT_MATCHES = int(os.environ['PYSAARVV_MAX_PRINT'])
+
 
 def encode_dict(d):
     return {k.encode(SERVER_ENCODING): v.encode(SERVER_ENCODING)
@@ -208,10 +213,8 @@ def resolve_station(name_frag, stations):
     yield from []
 
 
-def resolve(name_frag, as_alias=True, as_station=True, aliases=None, stations=None):
+def resolve(name_frag, stations, as_alias=True, as_station=True, aliases=None):
     found = []
-    if stations is None:
-        stations = get_stations()
     if as_station:
         found.extend(resolve_station(name_frag, stations))
     if as_alias:
@@ -223,7 +226,29 @@ def resolve(name_frag, as_alias=True, as_station=True, aliases=None, stations=No
 
 def resolve_iter(name_frag, stations, aliases=None):
     name_frag = name_frag.lower()
-    found = resolve(name_frag, as_station=False, aliases=aliases, stations=stations)
+    found = resolve(name_frag, stations, as_station=False, aliases=aliases)
     if len(found) >= 1:
         return found
-    return resolve(name_frag, as_alias=False, stations=stations)
+    return resolve(name_frag, stations, as_alias=False)
+
+
+def display(station):
+    # In the future, I might want to do pretty/prettier printing,
+    # so all output should be bundled.
+    print('{}  {}'.format(station['typeStr'], station['value']))
+
+
+def display_many(matches):
+    pattern = '???'
+    if len(matches) < 1:
+        pattern = 'Found no matches.'
+    elif len(matches) <= 1:
+        pattern = 'Found one match:'
+    elif len(matches) <= MAX_PRINT_MATCHES:
+        pattern = 'Found {} matches:'
+    else:
+        pattern = 'Found {} matches, displaying only {}:'
+
+    print(pattern.format(len(matches), MAX_PRINT_MATCHES))
+    for m in matches[:MAX_PRINT_MATCHES]:
+        display(m)
