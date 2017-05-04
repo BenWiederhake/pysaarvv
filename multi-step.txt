@@ -1,0 +1,32 @@
+###########
+
+First is:
+POST http://www.saarfahrplan.de/cgi-bin/query.exe/dn?OK
+# Known parameters.
+
+Second is:
+GET http://www.saarfahrplan.de/cgi-bin/query.exe/dn?seqnr=2&ident=lv.03098310.1493920350&REQ0HafasScrollDir=1
+# No parameters
+
+Third is:
+http://www.saarfahrplan.de/cgi-bin/query.exe/dn?seqnr=3&ident=lv.03098310.1493920350&OK
+
+guiVCtrl_connection_detailsOut_select_C1-0:"yes"
+guiVCtrl_connection_detailsOut_select_C1-1:"yes"
+guiVCtrl_connection_detailsOut_select_C1-2:"yes"
+guiVCtrl_connection_detailsOut_select_C2-0:"yes"
+guiVCtrl_connection_detailsOut_select_C2-1:"yes"
+guiVCtrl_connection_detailsOut_select_C2-2:"yes"
+jumpToDetails=yes&guiVCtrl_connection_detailsOut_add_selection:"Details+für+Auswahl"
+test0:"x"  # ???
+
+Content is in table.hafasResult
+
+Hinweise:
+<span class="highPriority">
+Baustelle! Wegen Wasserrohrbruchs im Meerwiesertalweg wird die Universität bis vsl. 5. Mai nicht angefahren!
+</span>
+
+###########
+
+The identifier can be found in te code of the first request.
