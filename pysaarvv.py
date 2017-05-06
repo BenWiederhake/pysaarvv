@@ -16,6 +16,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import bs4
 import json
 import os
 import requests
@@ -125,6 +126,44 @@ def get_bus_raw():
 
     # All done
     return r.text
+
+
+def parse_bus_to_overview_nodes(html_text):
+    bs = bs4.BeautifulSoup(html_text, 'html.parser')
+    the_tbody = bs.find('tr', {'class': 'selected'}).parent
+    return the_tbody.find_all('tr')[2:]
+
+
+def parse_overview_node_to_dict(some_tr):
+    # Heavily hard-coded for the current website layout.
+    d = dict()
+
+    # Enable the meatbag to sanity-check the results
+    try:
+        (d['start'], d['stop']) = some_tr.find('td', {'headers': 'hafasOVStop'}).text.split('\u00a0')[1:]
+    except:
+        (d['start'], d['stop']) = ('???', '???')
+    # Even more sanity checking
+    try:
+        d['date'] = some_tr.find('td', {'headers': 'hafasOVDate'}).text
+    except:
+        d['date'] = '???'
+    # First actual result: the time!
+    # FIXME: Implement proper splitting, once I have seen how lateness looks like.
+    d['time'] = some_tr.find('td', {'headers': 'hafasOVTime'}).next_sibling.text
+    # Duration.
+    # FIXME: Might be corrupted when there's lateness.
+    d['duration'] = my_duration = some_tr.find('td', {'headers': 'hafasOVDuration'}).text.strip()
+    # Decimal number of how often you need to change.
+    # Most the time it's implicit in 'products', so I make it optional.
+    try:
+        d['changes'] = some_tr.find('td', {'headers': 'hafasOVChanges'}).text
+    except:
+        d['changes'] = '???'
+    # Products: list of strings that describe the product, e.g. 'Bus  136' (double space is intentional)
+    d['products'] = [i['alt'] for i in some_tr.find('td', {'headers': 'hafasOVProducts'}).find_all('img')]
+
+    return d
 
 
 def get_suggestions_raw(name_part):
