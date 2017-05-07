@@ -220,7 +220,6 @@ def parse_suggestions(sugg_text):
 # If you change this, also update .gitignore
 USER_ALIASES = 'user_aliases.json'
 SYS_ALIASES = 'known_aliases.json'
-    # FIXME UNIB UNIC UNIM UNIV DUMA
 SYS_STATIONS = 'known_stations.json'
 
 
