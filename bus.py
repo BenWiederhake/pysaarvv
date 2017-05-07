@@ -56,10 +56,26 @@ def resolve_both(name_from, name_to):
 
 
 def run(name_from, name_to):
+    # Resolve
     (e_from, e_to) = resolve_both(name_from, name_to)
     if e_from is None:
         return False
-    print("Yay! {}".format((e_from, e_to)))  # FIXME
+    print("Route:")
+    pysaarvv.display(e_from)
+    pysaarvv.display(e_to)
+
+    # Download
+    raw_text = pysaarvv.get_bus_raw(e_from, e_to)
+
+    # Parse
+    print("Buses:")
+    for bus_html in pysaarvv.parse_bus_to_overview_nodes(raw_text):
+        bus_info = pysaarvv.parse_overview_node_to_dict(bus_html)
+        # TODO: Nicer formatting
+        # Sort so that it's at least predictable.
+        print(sorted(bus_info.items()))
+
+    # Done.
     return True
 
 
