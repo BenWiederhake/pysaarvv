@@ -17,6 +17,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import bs4
+import datetime
 import json
 import os
 import requests
@@ -112,9 +113,20 @@ def log_response(r):
         fp.write(r.text.encode())
 
 
-def get_bus_raw():
+def get_bus_raw(from_station, to_station, departure_datetime=None):
+    if departure_datetime is None:
+        departure_datetime = datetime.datetime.now()
+
     # Prepare parameters (stub)
-    payload = Q_PARAMETERS
+    payload = dict(Q_PARAMETERS)  # Copy
+    # On-the-fly cgi encoding for all spaces.
+    # Not sure whether Requests would automatically do that.
+    payload['REQ0JourneyDate'] = departure_datetime.strftime('%a,+%d.%m.%y')
+    payload['REQ0JourneyTime'] = departure_datetime.strftime('%H:%M')
+    payload['REQ0JourneyStopsS0G'] = from_station['value'].replace(' ', '+')
+    payload['REQ0JourneyStopsS0ID'] = from_station['id'].replace(' ', '+')
+    payload['REQ0JourneyStopsZ0G'] = to_station['value'].replace(' ', '+')
+    payload['REQ0JourneyStopsZ0ID'] = to_station['id'].replace(' ', '+')
 
     # Actual query
     # URL is safe, everything else must be converted first.
